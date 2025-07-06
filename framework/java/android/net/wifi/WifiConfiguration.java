@@ -2003,7 +2003,7 @@ public class WifiConfiguration implements Parcelable {
     @FlaggedApi(Flags.FLAG_ANDROID_V_WIFI_API)
     @SystemApi
     public void setSendDhcpHostnameEnabled(boolean enabled) {
-        mIsSendDhcpHostnameEnabled = enabled;
+        mIsSendDhcpHostnameEnabled = false;
     }
 
     /**

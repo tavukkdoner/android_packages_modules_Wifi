@@ -2013,7 +2013,7 @@ public class WifiConfiguration implements Parcelable {
         mRandomizedMacAddress = mac;
     }
 
-    private boolean mIsSendDhcpHostnameEnabled = true;
+    private boolean mIsSendDhcpHostnameEnabled = false;
 
     /**
      * Set whether to send the hostname of the device to this network's DHCP server.
@@ -2028,7 +2028,7 @@ public class WifiConfiguration implements Parcelable {
     @FlaggedApi(Flags.FLAG_ANDROID_V_WIFI_API)
     @SystemApi
     public void setSendDhcpHostnameEnabled(boolean enabled) {
-        mIsSendDhcpHostnameEnabled = enabled;
+        mIsSendDhcpHostnameEnabled = false;
     }
 
     /**
